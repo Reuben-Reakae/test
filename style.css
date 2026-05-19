@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
 }
 
-/* Custom Utilities */
+/* Custom Typography & Layout Utilities */
 .fw-black { font-weight: 900; }
 .fw-extrabold { font-weight: 850; }
 .tracking-wide { letter-spacing: 1px; }
@@ -22,40 +22,36 @@ body {
 .end-25 { right: 25%; }
 
 /* ==========================================================================
-   2. PRESENTATION LAYER THEMES & HERO
+   2. PRESENTATION LAYER THEMES & HERO (Cleaned up Spacing)
    ========================================================================== */
 .hero {
     background-image: url('Farm_background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px; /* Slightly deeper height space allocation */
+    height: 520px; /* Perfectly balanced text container framework */
     display: flex;
     align-items: center;
     position: relative;
 }
 
-/* Extra typography control filters */
+/* Typography Text Shadow Layering for clear readability over imagery */
 .hero-text h1 {
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero-text p {
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {
-    .hero { height: 500px; }
-    .hero-text h1 { font-size: 2.5rem !important; }
-    .hero-text p { font-size: 1.1rem !important; }
+    .hero { height: 440px; }
+    .hero-text h1 { font-size: 2.3rem !important; }
+    .hero-text p { font-size: 1.05rem !important; }
     .border-end { border-end: none !important; border-bottom: 1px solid #dee2e6 !important; padding-bottom: 15px; }
 }
 
-/* Interactive CTA Controls */
-.hover-scale:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(255, 193, 7, 0.4) !important;
-}
+/* Transition Bezier curves */
 .transition-all {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
