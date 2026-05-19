@@ -9,84 +9,136 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="hand-drawn-farmers-market-logo_23-2149329270.avif"
                      alt="Farmers Market Organic Business Logo"
-                     width="60"
-                     height="60"
-                     class="me-2 rounded-circle">
-                <span class="fw-bold">Farmers Market</span>
+                     width="50"
+                     height="50"
+                     class="me-2 rounded-circle border border-white border-2">
+                <span class="fw-bold tracking-wide">Farmers Market</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="crops.html">Crops</a></li>
-                    <li class="nav-item"><a class="nav-link" href="review.html">Reviews</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link active px-3 rounded bg-white bg-opacity-10" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="crops.html">Crops</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="review.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-text mx-auto px-3">
-            <h1>Fresh Crops From Local Farmers</h1>
-            <p class="text-warning fst-italic mb-3 fw-semibold">"Fresh from local roots to your family tables."</p>
-            <p class="mb-4">Healthy, Fresh and Affordable Produce</p>
-            <a href="crops.html" class="btn btn-warning btn-lg fw-bold px-4 shadow">View Crops</a>
+    <header class="hero position-relative">
+        <div class="container position-relative z-2">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8 hero-text text-center">
+                    <h1 class="display-3 fw-black text-white text-uppercase tracking-tight mb-2">
+                        Fresh Crops <span class="text-warning">Local Farmers</span>
+                    </h1>
+                    <p class="fs-4 text-warning fst-italic mb-3 fw-semibold letter-spacing-1">
+                        "Fresh from local roots to your family tables." 
+                    </p>
+                    <p class="fs-5 text-light opacity-90 mb-4 max-w-600 mx-auto">
+                        Discover healthy, crisp, and sustainable organic produce sourced directly from trusted regional agricultural fields.
+                    </p>
+                    <a href="crops.html" class="btn btn-warning btn-lg fw-bold px-5 py-3 rounded-pill shadow-lg text-uppercase transition-all hover-scale">
+                        Explore Our Crops
+                    </a>
+                </div>
+            </div>
         </div>
+        <div class="position-absolute top-0 start-0 w-100 height-100 bg-dark opacity-40 z-1"></div>
     </header>
 
-    <section class="container my-5">
-        <h2 class="text-center mb-4 fw-bold">Available Crops</h2>
-        <div class="row g-4">
-            <div class="col-sm-6 col-md-3">
-                <div class="card h-100 shadow-sm">
-                    <img src="tomatoes.webp" alt="Fresh red organic tomatoes on vine" width="300" height="200" class="card-img-top">
-                    <div class="card-body text-center">
-                        <h5 class="fw-bold">Tomatoes</h5>
-                        <p class="text-success fw-bold m-0">P25 per kg</p>
-                    </div>
+    <section class="bg-white py-4 shadow-sm position-relative z-3">
+        <div class="container">
+            <div class="row text-center g-3">
+                <div class="col-md-4 border-end border-light-subtle">
+                    <h5 class="fw-bold text-success mb-1">100% Organic</h5>
+                    <p class="text-muted small mb-0">Zero chemical additives</p>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="card h-100 shadow-sm">
-                    <img src="Maize.jpg" alt="Freshly harvested sweet yellow maize ears" width="300" height="200" class="card-img-top">
-                    <div class="card-body text-center">
-                        <h5 class="fw-bold">Maize</h5>
-                        <p class="text-success fw-bold m-0">P40 per bag</p>
-                    </div>
+                <div class="col-md-4 border-end border-light-subtle">
+                    <h5 class="fw-bold text-success mb-1">Locally Sourced</h5>
+                    <p class="text-muted small mb-0">Direct regional farm support</p>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="card h-100 shadow-sm">
-                    <img src="Carrots.webp" alt="Vibrant freshly dug crisp bundle of carrots" width="300" height="200" class="card-img-top">
-                    <div class="card-body text-center">
-                        <h5 class="fw-bold">Carrots</h5>
-                        <p class="text-success fw-bold m-0">P20 per bunch</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="card h-100 shadow-sm">
-                    <img src="Spinach.jpg" alt="Rich green crispy bundled organic spinach leaves" width="300" height="200" class="card-img-top">
-                    <div class="card-body text-center">
-                        <h5 class="fw-bold">Spinach</h5>
-                        <p class="text-success fw-bold m-0">P15 per bunch</p>
-                    </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-success mb-1">Always Fair Pricing</h5>
+                    <p class="text-muted small mb-0">Premium nutrition, entry prices</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p class="mb-0">© 2026 Farmers Market | All Rights Reserved</p>
+    <main class="container my-5 py-3">
+        <div class="text-center mb-5">
+            <h2 class="fw-black text-dark position-relative d-inline-block pb-2">
+                Available Seasonal Produce
+                <span class="position-absolute bottom-0 start-25 end-25 bg-success rounded" style="height: 4px;"></span>
+            </h2>
+            <p class="text-muted mt-2">Picked daily at peak maturity to guarantee maximum flavor and nutrition.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border border-light-subtle rounded-4 overflow-hidden">
+                    <div class="overflow-hidden bg-light">
+                        <img src="tomatoes.webp" alt="Fresh red organic tomatoes on vine" width="300" height="200" class="card-img-top image-zoom">
+                    </div>
+                    <div class="card-body text-center p-3">
+                        <h5 class="fw-bold text-dark mb-2">Tomatoes</h5>
+                        <p class="text-success fw-extrabold fs-5 mb-0 bg-success bg-opacity-10 py-1 rounded-3">P25 / kg</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border border-light-subtle rounded-4 overflow-hidden">
+                    <div class="overflow-hidden bg-light">
+                        <img src="Maize.jpg" alt="Freshly harvested sweet yellow maize ears" width="300" height="200" class="card-img-top image-zoom">
+                    </div>
+                    <div class="card-body text-center p-3">
+                        <h5 class="fw-bold text-dark mb-2">Maize</h5>
+                        <p class="text-success fw-extrabold fs-5 mb-0 bg-success bg-opacity-10 py-1 rounded-3">P40 / bag</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border border-light-subtle rounded-4 overflow-hidden">
+                    <div class="overflow-hidden bg-light">
+                        <img src="Carrots.webp" alt="Vibrant freshly dug crisp bundle of carrots" width="300" height="200" class="card-img-top image-zoom">
+                    </div>
+                    <div class="card-body text-center p-3">
+                        <h5 class="fw-bold text-dark mb-2">Carrots</h5>
+                        <p class="text-success fw-extrabold fs-5 mb-0 bg-success bg-opacity-10 py-1 rounded-3">P20 / bunch</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border border-light-subtle rounded-4 overflow-hidden">
+                    <div class="overflow-hidden bg-light">
+                        <img src="Spinach.jpg" alt="Rich green crispy bundled organic spinach leaves" width="300" height="200" class="card-img-top image-zoom">
+                    </div>
+                    <div class="card-body text-center p-3">
+                        <h5 class="fw-bold text-dark mb-2">Spinach</h5>
+                        <p class="text-success fw-extrabold fs-5 mb-0 bg-success bg-opacity-10 py-1 rounded-3">P15 / bunch</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="mt-5 py-4">
+        <p class="mb-0 small opacity-75">© 2026 Farmers Market | All Rights Reserved</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
