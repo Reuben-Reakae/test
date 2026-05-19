@@ -1,0 +1,80 @@
+/* ================= GLOBAL AND BASE STYLES ================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Vibrant green-friendly clean background tint */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Grounding footer rules */
+}
+
+/* ================= PRESENTATION LAYER THEMES ================= */
+
+/* Hero Landing Section Wrapper */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Farm_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Hero Typography Specs */
+.hero-text h1 {
+    font-size: 55px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+    font-size: 22px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Card Interaction Properties */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+/* Card Scale Hover Animations */
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Crop Uniform Formatting Grid */
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Content Element Placement Spacing Wrappers */
+.about-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Responsive Constraints for Feedback Wrapper */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+/* Uniform Layout Footer */
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
