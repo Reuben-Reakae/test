@@ -1,4 +1,6 @@
-/* ================= GLOBAL AND BASE STYLES ================= */
+/* ==========================================================================
+   1. GLOBAL AND BASE STYLES
+   ========================================================================== */
 body {
     margin: 0;
     padding: 0;
@@ -6,10 +8,12 @@ body {
     background-color: #f8f9fa; /* Vibrant green-friendly clean background tint */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Grounding footer rules */
+    min-height: 100vh; /* Keeps footer pinned to bottom of short content pages */
 }
 
-/* ================= PRESENTATION LAYER THEMES ================= */
+/* ==========================================================================
+   2. PRESENTATION LAYER THEMES & HERO
+   ========================================================================== */
 
 /* Hero Landing Section Wrapper */
 .hero {
@@ -32,10 +36,23 @@ body {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 36px; /* Scales down smoothly on small screens to prevent clipping */
+    }
+    .hero-text p {
+        font-size: 18px !important;
+    }
+}
+
 .hero-text p {
     font-size: 22px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
+
+/* ==========================================================================
+   3. INTERACTIVE CARDS & CONTENT SYSTEMS
+   ========================================================================== */
 
 /* Card Interaction Properties */
 .card {
@@ -43,7 +60,7 @@ body {
     border: none;
 }
 
-/* Card Scale Hover Animations */
+/* Card Scale Hover Animations (Adds excellent active presentation feedback) */
 .card:hover {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
@@ -52,7 +69,7 @@ body {
 /* Crop Uniform Formatting Grid */
 .card-img-top {
     object-fit: cover;
-    height: 200px;
+    height: 200px; /* Forces crop images to maintain a balanced structural height */
 }
 
 /* Content Element Placement Spacing Wrappers */
@@ -61,20 +78,39 @@ body {
     margin: 0 auto;
 }
 
+/* ==========================================================================
+   4. RESPONSIVE FORMS & FORM COMPONENT ADJUSTMENTS
+   ========================================================================== */
+
 /* Responsive Constraints for Feedback Wrapper */
 .contact-form {
     width: 100%;
-    max-width: 600px;
+    max-width: 550px;
     margin: 0 auto;
     background-color: #ffffff;
     border-radius: 12px;
 }
 
-/* Uniform Layout Footer */
+/* Fixed form selection radio button placement settings */
+.form-check-input {
+    float: none;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+/* Ensures labels wrap nicely on extremely narrow screens */
+.form-check-label {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* ==========================================================================
+   5. UNIFORM FOOTER CONFIGURATION
+   ========================================================================== */
 footer {
-    background-color: #212529;
+    background-color: #212529; /* Deep slate dark tone matching Bootstrap's bg-dark */
     color: #ffffff;
     text-align: center;
     padding: 20px;
-    margin-top: auto;
+    margin-top: auto; /* Works alongside body flex to cleanly ground the footer layer */
 }
