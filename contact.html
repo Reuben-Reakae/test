@@ -34,28 +34,27 @@
         </div>
     </nav>
 
-    <div class="container my-5">
+    <div class="container my-4 my-sm-5">
         <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-                <div class="contact-form card p-4 shadow-sm border border-light-subtle">
+            <div class="col-10 col-sm-10 col-md-8 col-lg-6">
+                <div class="card p-3 p-sm-4 shadow-sm border border-light-subtle bg-white rounded-4">
                     <h1 class="text-center mb-4 fs-3 fw-bold text-success">Market Feedback Form</h1>
 
                     <form class="needs-validation" novalidate action="#" method="POST">
                         
-                        <fieldset class="mb-4 p-3 border rounded bg-light-subtle">
+                        <fieldset class="mb-3 p-3 border rounded bg-light-subtle">
                             <legend class="w-auto px-2 fs-6 fw-bold text-success">Personal Information</legend>
                             
                             <div class="mb-3">
-                                <label for="fullName" class="form-label fw-semibold">Full Name</label>
+                                <label for="fullName" class="form-label small fw-semibold">Full Name</label>
                                 <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" minlength="3" maxlength="50" required>
                                 <div class="invalid-feedback">Please enter your name (minimum 3 characters).</div>
-                                <div class="valid-feedback">Looks complete!</div>
                             </div>
 
-                            <div class="mb-3">
-                                <label for="emailAddress" class="form-label fw-semibold">Email Address</label>
+                            <div class="mb-2">
+                                <label for="emailAddress" class="form-label small fw-semibold">Email Address</label>
                                 <input type="email" id="emailAddress" class="form-control" placeholder="username@example.com" required>
-                                <div class="invalid-feedback">Please enter a valid working email schema address.</div>
+                                <div class="invalid-feedback">Please enter a valid working email address.</div>
                             </div>
                         </fieldset>
 
@@ -63,45 +62,47 @@
                             <legend class="w-auto px-2 fs-6 fw-bold text-success">Your Experience</legend>
 
                             <div class="mb-3">
-                                <label for="produceCategory" class="form-label fw-semibold">Primary Crop Purchased</label>
+                                <label for="produceCategory" class="form-label small fw-semibold">Primary Crop Purchased</label>
                                 <select id="produceCategory" class="form-select" required>
                                     <option value="" selected disabled>Select an option...</option>
                                     <option value="veg">Fresh Vegetables (Tomatoes/Spinach/Carrots)</option>
                                     <option value="grain">Grains (Maize)</option>
                                     <option value="other">General Market Experience</option>
                                 </select>
-                                <div class="invalid-feedback">Please select a produce category line item.</div>
+                                <div class="invalid-feedback">Please select a produce category.</div>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label d-block fw-semibold text-center">Rate Freshness Quality</label>
-                                <div class="d-flex gap-3 bg-white p-2 border rounded justify-content-center">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rating" id="r1" value="1" required>
-                                        <label class="form-check-label text-warning" for="r1">1★</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rating" id="r2" value="2">
-                                        <label class="form-check-label text-warning" for="r2">2★</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rating" id="r3" value="3">
-                                        <label class="form-check-label text-warning" for="r3">3★</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rating" id="r4" value="4">
-                                        <label class="form-check-label text-warning" for="r4">4★</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rating" id="r5" value="5">
-                                        <label class="form-check-label text-warning" for="r5">5★</label>
+                                <label class="form-label d-block small fw-semibold text-center mb-2">Rate Freshness Quality</label>
+                                <div class="bg-white p-2 border rounded">
+                                    <div class="row g-2 text-center justify-content-center">
+                                        <div class="col-4 col-sm-2">
+                                            <input class="form-check-input" type="radio" name="rating" id="r1" value="1" required>
+                                            <label class="form-check-label text-warning d-block small" for="r1">1★</label>
+                                        </div>
+                                        <div class="col-4 col-sm-2">
+                                            <input class="form-check-input" type="radio" name="rating" id="r2" value="2">
+                                            <label class="form-check-label text-warning d-block small" for="r2">2★</label>
+                                        </div>
+                                        <div class="col-4 col-sm-2">
+                                            <input class="form-check-input" type="radio" name="rating" id="r3" value="3">
+                                            <label class="form-check-label text-warning d-block small" for="r3">3★</label>
+                                        </div>
+                                        <div class="col-6 col-sm-2">
+                                            <input class="form-check-input" type="radio" name="rating" id="r4" value="4">
+                                            <label class="form-check-label text-warning d-block small" for="r4">4★</label>
+                                        </div>
+                                        <div class="col-6 col-sm-2">
+                                            <input class="form-check-input" type="radio" name="rating" id="r5" value="5">
+                                            <label class="form-check-label text-warning d-block small" for="r5">5★</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="mb-3">
-                                <label for="userMessage" class="form-label fw-semibold">Detailed Comments</label>
-                                <textarea id="userMessage" class="form-control" rows="4" placeholder="Share comments about freshness or pricing..." minlength="10" maxlength="400" required></textarea>
+                            <div class="mb-2">
+                                <label for="userMessage" class="form-label small fw-semibold">Detailed Comments</label>
+                                <textarea id="userMessage" class="form-control" rows="3" placeholder="Share comments about freshness or pricing..." minlength="10" maxlength="400" required></textarea>
                                 <div class="invalid-feedback">Please type a valid statement (between 10 and 400 characters).</div>
                             </div>
                         </fieldset>
